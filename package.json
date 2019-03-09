@@ -1,0 +1,26 @@
+{
+  "name": "a-parser",
+  "version": "1.0.0",
+  "description": "A-Parser Client Library",
+  "main": "a-parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a-parser/api-nodejs.git"
+  },
+  "keywords": [
+    "a-parser",
+    "scraper"
+  ],
+  "author": "Forbidden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a-parser/api-nodejs/issues"
+  },
+  "homepage": "https://a-parser.com/",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}

@@ -1,13 +1,18 @@
 # api-nodejs
-[A-Parser](https://a-parser.com/) API client for Node.js
+[A-Parser](https://a-parser.com/) API Client Library for Node.js
 
 ### Usage
 ```
-const Aparser = require('./aparser');
+const AParserClient = require('a-parser');
 
-const serv = new Aparser('http://127.0.0.1:9091/API');
+const AParser = new AParserClient('http://127.0.0.1:9091/API');
 
-serv.ping()
-.then(data => console.log(data))
-.catch(err => console.log(err));
+AParser.ping()
+    .then(reply => console.log(reply.data))
+    .catch(err => console.log(err));
+
+
+(async () => {
+    const reply = await AParser.addTask(...);
+})()
 ```
